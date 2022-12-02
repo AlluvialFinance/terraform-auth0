@@ -38,3 +38,11 @@ resource "auth0_client" "my_client" {
   sso_disabled = var.sso_disabled
   logo_uri     = var.logo_uri
 }
+
+resource "auth0_client_grant" "my_client_grant" {
+  for_each = var.client_grants
+
+  client_id = auth0_client.my_client.client_id
+  audience  = each.value.audience
+  scope     = each.value.scope
+}

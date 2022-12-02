@@ -158,3 +158,7 @@ variable "sso_disabled" {
   type        = bool
   default     = false
 }
+
+variable "client_grants" {
+  type = map(any)
+}
