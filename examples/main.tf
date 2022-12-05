@@ -37,9 +37,6 @@ module "auth0" {
   // Client Grant
   client_grants = [for item in lookup(local.configs, "client_grants", {}) : item]
 
-  // Email
-  emails = [for item in lookup(local.configs, "emails", []) : item]
-
   // Org
   orgs = [for item in lookup(local.configs, "orgs", []) : item]
 

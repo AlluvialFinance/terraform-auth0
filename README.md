@@ -29,7 +29,6 @@
 | <a name="module_auth0_api"></a> [auth0\_api](#module\_auth0\_api) | ./modules/auth0-api | n/a |
 | <a name="module_auth0_client"></a> [auth0\_client](#module\_auth0\_client) | ./modules/auth0-client | n/a |
 | <a name="module_auth0_role"></a> [auth0\_role](#module\_auth0\_role) | ./modules/auth0-role | n/a |
-| <a name="module_email"></a> [email](#module\_email) | ./modules/auth0-email | n/a |
 
 ## Resources
 
@@ -51,7 +50,6 @@
 | <a name="input_clients"></a> [clients](#input\_clients) | With this resource, you can set up applications that use Auth0 for authentication and configure allowed callback URLs and secrets for these applications. | `any` | `[]` | no |
 | <a name="input_db_connections"></a> [db\_connections](#input\_db\_connections) | With Auth0, you can define sources of users, otherwise known as connections, which may include identity providers database authentication methods. | `any` | `[]` | no |
 | <a name="input_domain"></a> [domain](#input\_domain) | Auth0 domain | `string` | n/a | yes |
-| <a name="input_emails"></a> [emails](#input\_emails) | With Auth0, you can have standard welcome, password reset, and account verification email-based workflows built right into Auth0. | `any` | `[]` | no |
 | <a name="input_google"></a> [google](#input\_google) | With Auth0, you can define sources of users, otherwise known as connections, which may include identity provider Google  authentication methods. | `any` | `[]` | no |
 | <a name="input_orgs"></a> [orgs](#input\_orgs) | The Organizations feature represents a broad update to the Auth0 platform that allows our business-to-business (B2B) customers to better manage their partners and customer | `any` | `[]` | no |
 | <a name="input_prompts"></a> [prompts](#input\_prompts) | With this resource, you can manage your Auth0 prompts, including choosing the login experience version. | `any` | `[]` | no |

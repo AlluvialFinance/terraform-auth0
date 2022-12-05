@@ -105,13 +105,6 @@ variable "google" {
   description = "With Auth0, you can define sources of users, otherwise known as connections, which may include identity provider Google  authentication methods."
 }
 
-// Email
-variable "emails" {
-  type        = any
-  default     = []
-  description = "With Auth0, you can have standard welcome, password reset, and account verification email-based workflows built right into Auth0."
-}
-
 // Users
 
 variable "users" {
