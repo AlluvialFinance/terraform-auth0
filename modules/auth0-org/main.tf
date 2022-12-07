@@ -1,6 +1,7 @@
 resource "auth0_organization" "my_organization" {
   name         = var.name
   display_name = var.display_name
+  metadata     = var.metadata
 
   dynamic "branding" {
     for_each = var.branding

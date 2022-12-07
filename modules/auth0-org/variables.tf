@@ -10,6 +10,12 @@ variable "display_name" {
   default     = "Auth0 org"
 }
 
+variable "metadata" {
+  description = "Metadata associated with the organization. Maximum of 10 metadata properties allowed."
+  type        = map(string)
+  default     = {}
+}
+
 variable "branding" {
   description = "Defines how to style the login pages."
   type = list(object({
