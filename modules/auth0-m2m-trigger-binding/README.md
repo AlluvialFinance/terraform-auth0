@@ -35,13 +35,13 @@ provider "auth0" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_auth0"></a> [auth0](#requirement\_auth0) | ~>0.37.1 |
+| <a name="requirement_auth0"></a> [auth0](#requirement\_auth0) | ~>0.40.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_auth0"></a> [auth0](#provider\_auth0) | ~>0.37.1 |
+| <a name="provider_auth0"></a> [auth0](#provider\_auth0) | ~>0.40.0 |
 
 ## Modules
 
@@ -51,24 +51,15 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [auth0_action.my_action](https://registry.terraform.io/providers/auth0/auth0/latest/docs/resources/action) | resource |
+| [auth0_trigger_binding.m2m_flow](https://registry.terraform.io/providers/auth0/auth0/latest/docs/resources/trigger_binding) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_code"></a> [code](#input\_code) | n/a | `string` | n/a | yes |
-| <a name="input_dependencies"></a> [dependencies](#input\_dependencies) | n/a | <pre>list(object({<br>    name    = string<br>    version = string<br>  }))</pre> | `[]` | no |
-| <a name="input_deploy"></a> [deploy](#input\_deploy) | n/a | `bool` | `false` | no |
-| <a name="input_name"></a> [name](#input\_name) | n/a | `string` | `"Action"` | no |
-| <a name="input_runtime"></a> [runtime](#input\_runtime) | n/a | `string` | `"node16"` | no |
-| <a name="input_supported_triggers"></a> [supported\_triggers](#input\_supported\_triggers) | n/a | <pre>object({<br>    id      = string<br>    version = string<br>  })</pre> | <pre>{<br>  "id": "post-login",<br>  "version": "v3"<br>}</pre> | no |
+| <a name="input_actions"></a> [actions](#input\_actions) | n/a | `list(map(string))` | `[]` | no |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_display_name"></a> [display\_name](#output\_display\_name) | n/a |
-| <a name="output_id"></a> [id](#output\_id) | n/a |
-| <a name="output_supported_triggers_id"></a> [supported\_triggers\_id](#output\_supported\_triggers\_id) | n/a |
+No outputs.
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
