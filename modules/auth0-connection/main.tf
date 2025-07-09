@@ -1,9 +1,9 @@
 resource "auth0_connection" "this" {
   strategy = var.strategy
-  name     = var.strategy == "email" || "sms" ? var.strategy : var.name
+  name     = var.strategy == "email" || var.strategy == "sms" ? var.strategy : var.name
 
   options {
-    name                     = var.strategy == "email" || "sms" ? var.strategy : var.name
+    name                     = var.strategy == "email" || var.strategy == "sms" ? var.strategy : var.name
     from                     = var.from
     subject                  = var.subject
     syntax                   = var.syntax
