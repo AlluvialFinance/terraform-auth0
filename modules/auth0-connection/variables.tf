@@ -10,18 +10,6 @@ variable "name" {
   default     = ""
 }
 
-variable "auth_params_response_type" {
-  description = "The response type for the authentication parameters."
-  type        = string
-  default     = "code"
-}
-
-variable "auth_params_scope" {
-  description = "The scope for the authentication parameters."
-  type        = string
-  default     = ""
-}
-
 variable "from" {
   description = "The 'from' email address for email connections."
   type        = string
@@ -56,12 +44,6 @@ variable "brute_force_protection" {
   description = "Indicates whether brute force protection is enabled for this connection."
   type        = bool
   default     = true
-}
-
-variable "set_user_root_attributes" {
-  description = "Determines whether to sync user profile attributes (name, given_name, family_name, nickname, picture) at each login or only on the first login. Options include: on_each_login, on_first_login. Default value: on_each_login."
-  type        = string
-  default     = "on_each_login"
 }
 
 variable "non_persistent_attrs" {
